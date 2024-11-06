@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>HOT Waffles</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            html, body {
+                padding: 0;
+                margin: 0;
+                font-family: verdana, arial, sans-serif;
+            }
+ 
+            body {
+                color: #fff;
+                font-size: 1.1em;
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                background-color: #ffe7c4;
+            }
+ 
+            main {
+                display: flex;
+                flex-direction: column;
+            }
+ 
+            .flex-container1{
+                justify-content: center;
+                display: flex;
+                gap: 1.1em;
+                margin-top: 3em;
+                color: white;
+ 
+                font-family: 'Times New Roman', Times, serif;
+                flex-wrap: wrap;
+                
+            }
+            
+ 
+            .flex-container2{
+                justify-content: center;
+                display: flex;
+                gap: 1.1em;
+                margin-top: 3em;
+                color: white;
+ 
+                font-family: 'Times New Roman', Times, serif;
+                flex-wrap: wrap;
+                
+            }
+ 
+            .item1{
+            background-color: #553700; 
+            width: 90mm; 
+            height: 90mm;
+            margin: 6px;
+            }
+            .item2{
+            background-color: #aa8849;
+            width: 90mm; 
+            height: 90mm;
+            margin: 6px;
+            
+            }
+            .item3{
+            background-color: #ffce73; 
+            width: 90mm; 
+            height: 90mm; 
+            margin: 6px;
+            
+            }
+            .item4{
+            background-color: #634f2a;
+            width: 90mm; 
+            height: 90mm; 
+            margin: 6px;
+            }
+            .item5{
+            background-color: #ffdd9d; 
+            width: 90mm; 
+            height: 90mm; 
+            margin: 6px;
+            }
+            .item6{
+            background-color: #b17300;
+            width: 90mm; 
+            height: 90mm; 
+            margin: 6px;
+            }
+                
+            
+            .flex-item {
+                text-align:center;
+                font-size: 16px;
+                padding: 10px;
+                color: white;
+                background-size: 420px;
+                max-height: 300px;
+                
+            }
+ 
+            nav, aside {
+                width: 95mm;
+                
+                background-color: #ffe7c4;
+            }
+             
+            header, footer {
+                
+                height:30mm;
+                background-color: #ffe7c4;
+                text-align-last: center;
+                color: #2b1a00;
+                
+            }
+            .title1{
+                text-align: center;
+                color: #2b1a00;
+                background-color: #ffe7c4;
+            }
+            .title2{
+                text-align-last: right;
+                color: #2b1a00;
+            }
+            .title3{
+                text-align-last: right;
+                color: #2b1a00;
+            }
+            .title4
+            {
+                height:30mm;
+                text-align: center;
+                color: #2b1a00;
+            }
+            .div1{
+                text-align: left;
+                margin-left: 10px;
+                font-size: 20px;
+            }
+             
+            @media screen and (min-width: 375px ) {
+                 
+                body{
+                    min-height: 667px;
+                }
+                main {
+                    background-color: #ffe7c4;
+                    min-height: 100%;
+                    flex: 1 1 auto;
+                }
+            }
+            @media (max-width: 580px){
+                .div1 {
+                    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ic_menu_48px.svg/640px-Ic_menu_48px.svg.png);
+                    justify-content: center;
+                    background-size: 45px;
+                    height: 45px;
+                    width: 45px;
+                    font-size: 0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="div1">
+                <p class="title2">Корзина</p>
+                <p class="title3">настойки</p>
+            </div>
+        </header>
+        <h1 class="title1">HOT Waffles</h1>
+        <main>
+            <p class="title4">
+                Мягчайшие вафли из натуральных ингредиентов, приготовленные до золотистой корочки. <br>
+            </p>
+            <div class="flex-container1">
+                <div class="flex-item item1">вафля</div>
+                <div class="flex-item item2">вафля</div>
+                <div class="flex-item item3">вафля</div>
+            </div>
+            <div class =  "flex-container2">
+                <div class="flex-item item4">вафля</div>
+                <div class="flex-item item5">вафля</div>
+                <div class="flex-item item6">вафля</div>
+            </div>
+           
+            <aside>
+                
+            </aside>
+        </main>
+        <footer>
+            <p>Если появились вопросы доставки свяжитесь с нами по телефону или почте<br>
+                +7 916 332 93 72<br>
+                Hot@waffles.ru<p>
+        </footer>
+    </body>
+</html>
